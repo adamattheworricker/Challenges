@@ -16,7 +16,7 @@ Challenge 4:
 Write a script that prompts the user to enter their name and the day of the week, and then generates a short welcome message.
 
 Challenge 5: 
-Write a script to place a short shopping list of groceries into a list or array. Then print the shopping list to the console![image](https://github.com/adamattheworricker/Challenges/assets/40427309/a4f80f0a-3e64-4002-93e0-90ebb8160da8)
+Write a script to place a short shopping list of groceries into a list or array. Then print the shopping list to the console
 
 Challenge 6: 
 Write a script to place the following names into a text file called names.txt, each on a separate line; John, Louise, Clive, Sherry. Then read the file
