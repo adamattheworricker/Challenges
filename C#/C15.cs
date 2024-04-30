@@ -1,34 +1,40 @@
+using System.Diagnostics;
+using System.Formats.Asn1;
 using System.Net.Sockets;
-using System.Runtime.InteropServices;
+using System.Security.Cryptography;
 internal class Program
 {
     private static void Main(string[] args)
     {
-       string sport;
-       Console.WriteLine("Please enter your favorite sport; EPL, NFL, NBA, MLB or NHL");
-       sport = Console.ReadLine();
-       sport = sport.ToUpper();
-       switch (sport)
+       string shape;
+       int length;
+       int height;
+       int area;
+
+       Console.WriteLine("I can help you calculate the area of a square or a triangle. Which would you like me to do? Please enter square or triangle");
+       shape = Console.ReadLine();
+       shape = shape.ToLower();
+
+       Console.WriteLine("What is the length of the object in centimetres?");
+       length = Convert.ToInt32(Console.ReadLine());
+
+       Console.WriteLine("What is the height of the object in centimetres?");
+       height = Convert.ToInt32(Console.ReadLine());
        {
-        case "EPL":
-            Console.WriteLine("Awesome, you're a soccer fan! The current EPL champions are Manchester City");
-            break;
-        case "NFL":
-            Console.WriteLine("Great, a football lover. The current Superbowl champions are the Kansas City Chiefs");
-            break;
-        case "NBA":
-            Console.WriteLine("Hey basketball fan! Current NBA champions are the Denver City Nuggets");
-            break;
-        case "MLB":
-            Console.WriteLine("Oh hi there baseball fanatic! The current MLB champions are the Texas Rangers");
-            break;
-        case "NHL":
-            Console.WriteLine("Howdy hockey fan! The current Stanley Cup holders are the Vegas Golden Knights");
-            break;
-        default:
-            Console.WriteLine("Hmm, I dont know anything about that sport, please select another one");
-            break;
-       }  
+            if (shape == "triangle")
+            {
+                area = length * height / 2;
+                Console.WriteLine("The area of the triangle is " + area + " centimetres squared");
+            }
+            else if (shape == "square")
+            {
+                area = length * height;
+                Console.WriteLine("The area of the square is " + area + " centimetres squared");
+            }
+            else
+            {
+                Console.WriteLine("Please select a valid shape");
+            }
+       }
     }
 }
-
