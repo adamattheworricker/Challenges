@@ -40,19 +40,22 @@ Write a script to take input from employeelist.txt which includes the employee's
 **Challenge 13:**
 Write a script to again take input from iplist.txt, and for each line convert '123.4.5.6 port 80' to '123.4.5.6:80'
 
-**Challenge 14:**
+**Challenge 15:**
 Write a script which can calculate the area of a square or triangle, per the users selection, with the user providing the length and height of the shape.
 
-**Challenge 15:**
+**Challenge 16:**
 Write a script which asks the user for their favorite sport, and then tells them the current champion, i.e. EPL - Manchester City, NFL - Kansas City Chiefs, NBA - Denver Nuggets, MLB - Texas Rangers, NHL - Vegas Golden Knights
 Give consideration to your user entering input in upper, lower, or mixed case. Also give consideration to your user entering a sport that you haven't listed.
 
-**Challenge 16:**
+**Challenge 17:**
 Write a script which asks the user to enter the cost of an item, and the amount the customer paid, and then calculates the most efficient way to give change. Consider denominations of notes $50, $20, $10, $5 & $1. Also give consideration to scenarios where the customer hasn't paid enough.
 
-**Challenge 17:**
+**Challenge 18:**
 Write a script which take sentences as input from a user, and then calculates number of words, average word length, and number of sentences.
 
-**Challenge 18:**
+**Challenge 19:**
 Write a script which takes input from a user, and then incorporates it in a request to an API, and then returns an answer to the user.
 A list of free public API's can be found here - GitHub - public-apis/public-apis: A collective list of free APIs
+
+**Challenge 20:**
+Write something yourself. Think about a problem you could solve (it can be hypothetical, personal, or professional) and try to write a script to automate the solution for you. Try to leverage as many of the skills you have learned as possible
