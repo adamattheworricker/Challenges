@@ -1,11 +1,20 @@
-Write-Host "Please enter your favorite sport; EPL, NFL, NBA, MLB or NHL"
-$sport = Read-Host
-$sport = $sport.ToUpper()
-switch ($sport) {
-    EPL {"Awesome, you're a soccer fan! The current EPL champions are Manchester City"}
-    NFL {"Great, a football lover. The current Superbowl champions are the Kansas City Chiefs"}
-    NBA {"Hey basketball fan! Current NBA champions are the Denver City Nuggets"}
-    MLB {"Oh hi there baseball fanatic! The current MLB champions are the Texas Rangers"}
-    NHL {"Howdy hockey fan! The current Stanley Cup holders are the Vegas Golden Knights"}
-    Default {"Hmm, I dont know anything about that sport, please select another one"}
-}
+Write-Host 'I can help you calculate the area of a square or a triangle. Which would you like me to do? Please enter square or triangle'
+$shape = Read-Host
+ 
+Write-Host 'What is the length in centimeters?'
+[INT]$length = Read-Host
+Write-Host 'What is the height in centimeters?'
+[INT]$height = Read-Host
+ 
+If ($shape -eq "square") {
+    [INT]$area = $length*$height
+    Write-Host "The area of the square is $area centimeters squared"
+    }
+    ElseIf ($shape -eq "triangle") {
+    [INT]$area = $length*$height*0.5
+    Write-Host "The area of the triangle is $area centimeters squared"
+    }
+    Else {
+    Write-Host 'You did not select a valid shape.' -ForegroundColor Yellow
+    }
+
